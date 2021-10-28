@@ -5,7 +5,7 @@ title: Rishab Kharidhi
 author: Rishab Kharidhi
 description: > 
   this is my personal website
-baseurl: ""
+baseurl: "www.rishabkharidhi.com"
 
 plugins:
   - jekyll-feed
