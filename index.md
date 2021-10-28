@@ -42,9 +42,9 @@ cta_button_label: contact # the label on the button
 
 ---			
 [//]: # (write a bit about yourself here)
-### why **hello**?  
+### I am a Security Engineer with over a year of experience in a SIEM based company.
 
-### **hello** has a simple goal: to make GitHub Pages accessible to everyone.  
+### I am passionate about web application security and privacy engineering and aim to work in such a role ... 
   
 **hello** is a minimalist template that lets you design a beautiful website or portfolio on GitHub Pages - without installing a Ruby
 development environment, learning to use Jekyll, **or even typing a single line of code**. It's ideal for GitHubbers
