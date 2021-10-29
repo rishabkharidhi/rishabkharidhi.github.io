@@ -46,6 +46,7 @@ cta_description: Lets connect! # a description to be desplayed below the heading
 cta_button: mailto:rishab.kharidhi@colorado.edu # a link to an external website or to media
 cta_button_label: send me an email! # the label on the button
 
+# If you are hiring for or know anyone hiring for an entry-level Application Security Engineer, please take a look at my resume(can be downloaded below) and feel free to reach out to me! I am a quick learner and am constantly exploring new tools, technologies and get excited about finding bugs in them! 
 ---			
 [//]: # (write a bit about yourself here)
 <p>
@@ -56,7 +57,7 @@ cta_button_label: send me an email! # the label on the button
   I am looking to connect with like minded people.
 
   <br>
-  > P.S. Page is still under development. Please excuse the errors.
+  > P.S. Page is still under development. Please excuse the errors. <br>
   >      version 2 of the site coming soon...
 </p>
-# If you are hiring for or know anyone hiring for an entry-level Application Security Engineer, please take a look at my resume(can be downloaded below) and feel free to reach out to me! I am a quick learner and am constantly exploring new tools, technologies and get excited about finding bugs in them! 
+
