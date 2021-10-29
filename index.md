@@ -32,8 +32,14 @@ about_button_label: Download CV # the label on the button
 
 # By declaring these variables, you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. In addition, you must 1) create an HTML file in the_includes folder for each project with the text you'd like to display, and 2) create a YAML file in the _data folder describing the order in which each project should be shown and categorized. See `/includes/example.html` and `/_data/work.yml` for examples.
 
-portfolio: work # the heading for your portfolio and title of your YAML file
-portfolio_description: you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. # a description to be desplayed below the heading and above the content
+portfolio: work experience # the heading for your portfolio and title of your YAML file
+portfolio_description: 
+
+
+# projects section
+
+portfolio: projects # the heading for your portfolio and title of your YAML file
+portfolio_description: 
 
 # optional CTA section --------------------------------------------------
 
@@ -47,9 +53,8 @@ cta_button_label: send me an email! # the label on the button
 [//]: # (write a bit about yourself here)
 <p>
   I am a Security Engineer with over a year of experience in a SIEM based company.
-
+  <br>
   I love Application Security and Privacy. I usually work on CTFs on websites such as tryhackme, my aim is to work in a role where I can break applications, test networks and fix them. 
+  <br>
   If you are hiring for or know anyone hiring for an entry-level Application Security Engineer, please take a look at my resume(can be downloaded below) and feel free to reach out to me! I am a quick learner and am constantly exploring new tools, technologies and get excited about finding bugs in them! 
 </p>
-
-**hello** is adapted from [Twenty](https://html5up.net/twenty), a responsive, mobile-friendly theme by HTML5 Up.
