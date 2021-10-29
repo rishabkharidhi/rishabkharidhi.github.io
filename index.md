@@ -54,4 +54,6 @@ cta_button_label: send me an email! # the label on the button
   I love Application Security and Privacy. I usually work on CTFs on websites such as tryhackme, my aim is to work in a role where I can break applications, test networks and fix them. 
   <br>
   If you are hiring for or know anyone hiring for an entry-level Application Security Engineer, please take a look at my resume(can be downloaded below) and feel free to reach out to me! I am a quick learner and am constantly exploring new tools, technologies and get excited about finding bugs in them! 
+  
+  > P.S. Page is still under development. Please excuse the errors.
 </p>
