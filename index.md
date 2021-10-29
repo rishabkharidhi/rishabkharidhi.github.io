@@ -4,8 +4,8 @@ layout: hello-default
 # using Markdown language, you can customize the following variables!
 
 # these variables are required -------------------------------
-banner_title: hello world,\n I am Rishab Kharidhi
-banner_subtitle: security engineer
+banner_title: hello world, I am Rishab Kharidhi
+banner_subtitle: security engineer. gamer. bookworm.
 background_image: /images/background.jpeg
 
 about_button: https://www.rishabkharidhi.com/Rishab_Kharidhi_Resume.pdf # the link
@@ -45,16 +45,11 @@ cta_button_label: send me an email! # the label on the button
 
 ---			
 [//]: # (write a bit about yourself here)
-### I am a Security Engineer with over a year of experience in a SIEM based company.
+<p>
+  I am a Security Engineer with over a year of experience in a SIEM based company.
 
-### I am passionate about web application security and privacy engineering and aim to work in such a role ... 
-  
-**hello** is a minimalist template that lets you design a beautiful website or portfolio on GitHub Pages - without installing a Ruby
-development environment, learning to use Jekyll, **or even typing a single line of code**. It's ideal for GitHubbers
-who want to start building their personal website on [GitHub Pages](https://pages.github.com/), but maybe aren't so familiar with web development.
-  
-
-The default layout of **hello** is a streamlined single page with three major customizable sections: a required "about" section, an optional portfolio, and an optional CTA. Using [Liquid](https://shopify.github.io/liquid/) variables declared by in the config and index files, **hello** offers an easy-to-use design where all customizations necessary for a basic personal website can be written in [Markdown](https://www.markdownguide.org/basic-syntax/).  
-
+  I love Application Security and Privacy. I usually work on CTFs on websites such as tryhackme, my aim is to work in a role where I can break applications, test networks and fix them. 
+  If you are hiring for or know anyone hiring for an entry-level Application Security Engineer, please take a look at my resume(can be downloaded below) and feel free to reach out to me! I am a quick learner and am constantly exploring new tools, technologies and get excited about finding bugs in them! 
+</p>
 
 **hello** is adapted from [Twenty](https://html5up.net/twenty), a responsive, mobile-friendly theme by HTML5 Up.
