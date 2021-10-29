@@ -1,6 +1,5 @@
 # this file organizes the items in your portfolio, which are placed in the _includes folder
 # in the root directory
-
 experience:
   - category: work 
     items:
@@ -10,3 +9,4 @@ experience:
   - category: education
     items:
       - item: cub.html
+      - item: pes.html
