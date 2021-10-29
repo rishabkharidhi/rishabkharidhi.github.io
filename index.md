@@ -8,8 +8,11 @@ banner_title: hello world, I am Rishab Kharidhi
 banner_subtitle: security engineer
 background_image: /images/background.jpeg
 
+about_button: https://www.rishabkharidhi.com/Rishab_Kharidhi_Resume.pdf # the link
+about_button_label: Download CV # the label on the button
+
 # all of the following variables are optional -----------------
-page_url: /hello # only include this variable if you aren't building the page to your primary domain 
+page_url: /rishabkharidhi # only include this variable if you aren't building the page to your primary domain 
 
 # favicon
 favicon: /assets/ico/favicon.ico
@@ -22,7 +25,7 @@ linkedin: rishab-kharidhi # the part after ("https://www.linkedin.com/in/...")
 # google_analytics: <-- your google analytics Tracking ID
 
 # By declaring these variables, you can include a button that links to an external website or to media.
-about_button: https://www.rishabkharidhi.com/download/Rishab_Kharidhi_Resume.pdf # the link
+about_button: https://www.rishabkharidhi.com/Rishab_Kharidhi_Resume.pdf # the link
 about_button_label: Download CV # the label on the button
 
 # optional portfolio section ------------------------------------------
@@ -35,10 +38,10 @@ portfolio_description: you can include a portfolio showcasing your work and orga
 # optional CTA section --------------------------------------------------
 
 # By declaring these variables, you can include a CTA section.
-cta: connect # the heading for your CTA section
+cta: Contact # the heading for your CTA section
 cta_description: Lets connect! # a description to be desplayed below the heading and above the content
 cta_button: mailto:rishab.kharidhi@colorado.edu # a link to an external website or to media
-cta_button_label: contact # the label on the button
+cta_button_label: send me an email! # the label on the button
 
 ---			
 [//]: # (write a bit about yourself here)
