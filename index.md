@@ -12,7 +12,7 @@ about_button: https://www.rishabkharidhi.com/Rishab_Kharidhi_Resume.pdf # the li
 about_button_label: Download CV # the label on the button
 
 # all of the following variables are optional -----------------
-#page_url: /hello # only include this variable if you aren't building the page to your primary domain 
+page_url: /hello # only include this variable if you aren't building the page to your primary domain 
 
 # favicon
 favicon: /assets/ico/favicon.ico
