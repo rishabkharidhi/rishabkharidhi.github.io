@@ -30,7 +30,7 @@ about_button_label: Download CV # the label on the button
 # experience section ------------------------------------------
 
 portfolio: experience # the heading for your portfolio and title of your YAML file
-portfolio_description: work and education
+#portfolio_description: work and education
 
 
 # projects section
