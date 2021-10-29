@@ -2,11 +2,14 @@
 # in the root directory
 
 work:
-  - category: Securonix
+  - category: Work 
     items:
-      - item: example.html
+      - item: securonix.html
         image: /images/NYC1.jpg # optionally, include the file path for an image for each item
-  - category: Webroot
+    items:
+      - item: webroot.html
+      
+  - category: Education
     items:
       - item: example2.html
         image: /images/LA1.jpg
