@@ -5,8 +5,6 @@ experience:
   - category: work 
     items:
       - item: securonix.html
-        image: /images/NYC1.jpg # optionally, include the file path for an image for each item
-    items:
       - item: webroot.html
       
   - category: education
