@@ -6,7 +6,7 @@ layout: hello-default
 # these variables are required -------------------------------
 banner_title: hello world, I am Rishab Kharidhi
 banner_subtitle: security engineer. gamer. bookworm.
-background_image: /images/background.jpeg
+background_image: /images/background.jpg
 
 about_button: https://www.rishabkharidhi.com/Rishab_Kharidhi_Resume.pdf # the link
 about_button_label: Download CV # the label on the button
