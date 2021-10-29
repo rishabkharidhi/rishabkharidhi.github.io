@@ -21,8 +21,7 @@ favicon: /assets/ico/favicon.ico
 twitter_username: rishabkharidhi # # your twitter handle
 github_username:  rishabkharidhi # your github username
 linkedin: rishab-kharidhi # the part after ("https://www.linkedin.com/in/...")
-# facebook_username: <-- your facebook username (the part after "https://www.facebook.com/...")
-# google_analytics: <-- your google analytics Tracking ID
+
 
 # By declaring these variables, you can include a button that links to an external website or to media.
 about_button: https://www.rishabkharidhi.com/Rishab_Kharidhi_Resume.pdf # the link
@@ -31,7 +30,7 @@ about_button_label: Download CV # the label on the button
 # experience section ------------------------------------------
 
 portfolio: experience # the heading for your portfolio and title of your YAML file
-portfolio_description: 
+portfolio_description: work and education
 
 
 # projects section
