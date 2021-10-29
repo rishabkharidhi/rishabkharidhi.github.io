@@ -36,8 +36,8 @@ portfolio_description:
 
 # projects section
 
-portfolio: projects # the heading for your portfolio and title of your YAML file
-portfolio_description: 
+#portfolio: projects # the heading for your portfolio and title of your YAML file
+#portfolio_description: 
 
 # optional CTA section --------------------------------------------------
 
