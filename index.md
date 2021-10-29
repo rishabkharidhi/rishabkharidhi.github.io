@@ -36,7 +36,7 @@ portfolio_description: you can include a portfolio showcasing your work and orga
 
 # By declaring these variables, you can include a CTA section.
 cta: connect # the heading for your CTA section
-cta_description: questions, comments, or concerns? please don't hesitate to reach out. # a description to be desplayed below the heading and above the content
+cta_description: Lets connect! # a description to be desplayed below the heading and above the content
 cta_button: mailto:rishab.kharidhi@colorado.edu # a link to an external website or to media
 cta_button_label: contact # the label on the button
 
