@@ -52,12 +52,9 @@ cta_button_label: send me an email! # the label on the button
 <p>
   I am a Security Engineer with over a year of experience in a SIEM based company.
   <br>
-  I love Application Security and Privacy. I usually work on CTFs on websites such as tryhackme, my aim is to work in a role where I can break applications, test networks and fix them. 
+  I love Application Security and Privacy. I usually work on CTFs on websites such as tryhackme, I love breaking applications, finding bugs, testing networks and fixing them. 
   <br>
   I am looking to connect with like minded people.
 
-  <br>
-  > P.S. Page is still under development. Please excuse the errors. <br>
-  >      version 2 of the site coming soon...
 </p>
 
