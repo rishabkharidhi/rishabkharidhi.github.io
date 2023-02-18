@@ -15,7 +15,7 @@ about_button_label: Download CV # the label on the button
 page_url: /hello # only include this variable if you aren't building the page to your primary domain 
 
 # favicon
-favicon: /assets/ico/favicon.ico
+favicon: /assets/ico/hacker.png
 
 # social media
 twitter_username: rishabkharidhi # # your twitter handle
@@ -50,7 +50,7 @@ cta_button_label: send me an email! # the label on the button
 ---			
 [//]: # (write a bit about yourself here)
 <p>
-  I am a Security Engineer with over a year of experience in a SIEM based company.
+  I am a Security Engineer currently working at Amazon Web Services (AWS) under the SecurityHub Org.
   <br>
   I love Application Security and Privacy. I usually work on CTFs on websites such as tryhackme, I love breaking applications, finding bugs, testing networks and fixing them. 
   <br>
