@@ -15,7 +15,7 @@ about_button_label: Download CV # the label on the button
 page_url: /hello # only include this variable if you aren't building the page to your primary domain 
 
 # favicon
-favicon: /assets/ico/hacker.png
+favicon: /assets/ico/hacker.gif
 
 # social media
 twitter_username: rishabkharidhi # # your twitter handle
