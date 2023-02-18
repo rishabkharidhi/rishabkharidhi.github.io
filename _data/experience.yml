@@ -3,6 +3,7 @@
 experience:
   - category: work 
     items:
+      - item: aws.html
       - item: securonix.html
       - item: webroot.html
       
