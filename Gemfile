@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap', '~> 4.6.2', '>= 4.6.2.1'
 
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
