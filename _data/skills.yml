@@ -1,0 +1,13 @@
+groups:
+  - label: App Security
+    items: [Threat Modeling, STRIDE, OWASP Top 10, NIST, MITRE ATT&CK]
+  - label: Cryptography
+    items: [Symmetric & Asymmetric, PKI, Digital Certs, Hashing, Block & Stream Ciphers]
+  - label: Networking
+    items: [TCP/IP, TLS, IPSec, DHCP, DNS, VPN, Firewalls, Snort]
+  - label: Languages
+    items: [Python, C, C++, Go, SQL, Bash, PowerShell, x86]
+  - label: Tooling
+    items: [IDA Pro, WinDbg, GDB, Burp Suite, Metasploit, Wireshark, Docker, Splunk]
+  - label: AWS
+    items: [Security Hub, Config, Lambda, CloudFormation, IAM, EC2, S3, CloudWatch]

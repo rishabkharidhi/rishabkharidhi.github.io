@@ -1,13 +1,63 @@
-# this file organizes the items in your portfolio, which are placed in the _includes folder
-# in the root directory
-experience:
-  - category: work 
-    items:
-      - item: aws.html
-      - item: securonix.html
-      - item: webroot.html
-      
-  - category: education
-    items:
-      - item: cub.html
-      - item: pes.html
+# Work experience — edit these entries to update the site.
+work:
+  - company: Riot Games
+    team: Product Security
+    role: Security Engineer
+    location: Los Angeles, CA
+    start: Jun 2023
+    end: Present
+    current: true
+    points:
+      - Security engineering on the Product Security team, hardening the products and platforms behind Riot's games.
+      - Threat modeling, security reviews, and building controls that keep player-facing systems safe at scale.
+
+  - company: Amazon Web Services
+    team: Security Hub
+    role: Security Engineer I
+    location: New York, NY
+    start: Apr 2022
+    end: Jun 2023
+    current: false
+    points:
+      - Built and maintained security controls in Python, backed by AWS Config rules that evaluate services against AWS Best Practices, PCI DSS, CIS, and NIST.
+      - Wrote unit tests with MagicMock and ran thorough code reviews to keep controls compliant with industry standards.
+      - Handled on-call support, partnering with cross-functional teams to ship fixes and public-facing documentation.
+      - Ran region testing with CloudFormation to deploy infrastructure and config rules at scale.
+
+  - company: Securonix
+    team: SIEM & UEBA
+    role: Security Engineer / SIEM Consultant
+    location: New York, NY
+    start: Aug 2020
+    end: Apr 2022
+    current: false
+    points:
+      - Worked with SOC/CSIRT client teams to implement Securonix SIEM and UEBA, running analysis on aggregated logs.
+      - Led high-pressure POCs that lifted team revenue 20% by building end-to-end MITRE ATT&CK threat models and policies.
+      - Designed 800+ use cases per POC surfacing beaconing, enumeration, insider threat, account misuse, and endpoint malware.
+
+  - company: Webroot
+    team: An OpenText company
+    role: Threat Research & Development Intern
+    location: Broomfield, CO
+    start: May 2019
+    end: Dec 2019
+    current: false
+    points:
+      - Reverse-engineered malware with static and dynamic analysis.
+      - Built modules for PE file disassembly, YARA scanning, and containerized dependencies — cutting build effort 30%.
+
+education:
+  - school: University of Colorado Boulder
+    degree: M.S. Cybersecurity
+    location: Boulder, CO
+    start: Aug 2018
+    end: May 2020
+    detail: GPA 3.9/4.0 · Graduate TA for Digital Forensics & Penetration Testing · William E. Rapp Fellowship
+
+  - school: PES University
+    degree: B.Tech, Electronics & Communication
+    location: Bangalore, India
+    start: Aug 2014
+    end: May 2018
+    detail: Minor in Computer Science Engineering

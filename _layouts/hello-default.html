@@ -1,206 +1,182 @@
-<!-- design: hello for github pages by sng -->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  {% if page.favicon %}<link rel="icon" href="{{ page.favicon }}" type="image/png" />{% endif %}
+  {%- feed_meta -%}
+  {%- seo -%}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
 
-  <!--HEAD-->
-  <head>
-    <style>html{visibility: hidden;opacity:0;}</style>
-    <title>{{ site.title }}</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="{{ site.description }}">
-    <meta name="keywords" content="" />
+  <header class="nav" id="top">
+    <a href="#top" class="nav-brand">
+      <span class="prompt">rk@sec</span><span class="dim">:~$</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">side_projects</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="nav-cv" href="{{ page.resume_url }}" target="_blank" rel="noopener">./resume.pdf</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&gt;_</button>
+  </header>
 
-    <!--favicon-->
-    {% if page.favicon %}
-    <link rel="icon" href= "{{ page.favicon }}" type="image/x-icon" />
-    {% endif %}
+  <section class="hero">
+    <div class="hero-terminal">
+      <div class="term-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="term-title">bash — rishabkharidhi.com</span>
+      </div>
+      <div class="term-body" id="bootseq">
+        <p class="line"><span class="prompt">$</span> whoami</p>
+        <p class="line big" id="name-line">{{ page.banner_name }}</p>
+        <p class="line"><span class="prompt">$</span> cat role.txt</p>
+        <p class="line role-line"><span id="role"></span><span class="cursor">&#9608;</span></p>
+        <p class="line"><span class="prompt">$</span> ./status --now</p>
+        <p class="line status"><span class="ok">&#9679;</span> Security Engineer @ Riot Games &middot; Product Security &middot; Los Angeles, CA</p>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">view side projects &rarr;</a>
+      <a href="#contact" class="btn btn-ghost">get in touch</a>
+    </div>
+  </section>
 
-    <!--jekyll plugins-->
-    {%- feed_meta -%}
-    {%- seo -%}
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="section-path">~/about</span>
+      <h2>Securing the products that millions play.</h2>
+    </div>
+    <div class="about-body">
+      {{ content }}
+    </div>
+  </section>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    {% if page.google_analytics %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ page.google_analytics }}"></script>
-      <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{ page.google_analytics }}');
-    </script>
-    {% endif %}
-
-
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.dropotron.min.js"></script>
-    <script src="/js/jquery.scrolly.min.js"></script>
-    <script src="/js/jquery.scrollgress.min.js"></script>
-    <script src="/js/skel.min.js"></script>
-    <script src="/js/skel-layers.min.js"></script>
-    <script src="/js/init.js"></script>
-    <noscript>
-        <link rel="stylesheet" href="/css/skel.css" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/style-wide.css" />
-        <link rel="stylesheet" href="/css/style-noscript.css" />
-    </noscript>
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  </head>
-
-
-  <body class="index">
-
-    <!-- HEADER -->		
-    <header id="header">
-      <h1 id="logo" style="text-transform:lowercase">
-        <a href="/">hello</a></h1>
-      <nav id="nav">
-        <ul>
-          <li style="text-transform:lowercase"><a href="{{ page.page_url }}/#about">about</a></li>
-          {% if page.portfolio %}
-          <li style="text-transform:lowercase"><a href="{{ page.page_url }}/#{{ page.portfolio }}">{{ page.portfolio }}</a></li>
-          {% endif %}
-          {% if page.cta %}
-          <li style="text-transform:lowercase"><a href="{{ page.page_url }}/#{{ page.cta }}"> {{ page.cta }} </a></li>
-          {% endif %}
-        </ul>
-      </nav>
-    </header>
-
-    <!-- BANNER -->		
-    <section id="banner" 
-    {% if page.background_image %}
-    style="background-image: url('{{ page.background_image }}'); background-attachment: fixed; background-size: cover;"
-        {% endif %}>
-
-        <div class="inner">
-
-            <h2 style="font-size:3em; text-transform:none">{{ page.banner_title }}</h2>
-            <p style="text-transform:none;">{{ page.banner_subtitle }}</p>
-      
+  <section class="section" id="experience">
+    <div class="section-head">
+      <span class="section-path">~/experience</span>
+      <h2>Where I&rsquo;ve worked</h2>
+    </div>
+    <div class="timeline">
+      {% for job in site.data.experience.work %}
+      <article class="tl-item {% if job.current %}active{% endif %}">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <h3>{{ job.company }}</h3>
+            <span class="tl-date">{{ job.start }} &rarr; {{ job.end }}</span>
+          </div>
+          <p class="tl-role">{{ job.role }} &middot; <span class="dim">{{ job.team }}</span> &middot; {{ job.location }}</p>
+          <ul class="tl-points">
+            {% for p in job.points %}<li>{{ p }}</li>{% endfor %}
+          </ul>
         </div>
-
-    </section>
-
-<!--CONTENT-->
-
-    <div class="page-content">
-
-        <article id="main">
-            <!-- section: about -->
-              <header class="special container" id="about">
-                <h2 ><strong>about</strong></h2>
-              </header>
-
-              <section class="special container" style="margin-bottom:10em">
-
-                  <div style="padding: 0 1em; text-align:center"> 
-                    {{ content }}</div>
-      
-                  <!-- button -->
-                  {% if page.about_button %}
-                  <section class="wrapper style1 container special">
-                        <footer class="major">
-                            <ul class="buttons">
-                              <li><a href="{{ page.about_button }}" class="button">{{ page.about_button_label }}</a></li>
-                            </ul>
-                        </footer>
-                  </section>
-                {% endif %}      
-              </section>    
-
-            <!-- section: work-->
-            {% if page.portfolio %}
-            <section class="wrapper style3 container special" id="{{ page.portfolio }}">
-					      <header class="special">
-                  <h2><strong>{{ page.portfolio }}</strong></h2>
-                </header>
-                <p>{{ page.portfolio_description }}</p>
-                {% for categories in site.data[page.portfolio][page.portfolio] %}
-                <div class="row">
-
-                          <div class="12u">
-                              <h3 style="margin-bottom:2em; font-size:1.25em"><strong>{{ categories.category}}</strong></h3>
-                          </div>
-
-                          {% for items in categories.items %}
-                          <div class="6u item">
-                            <section>
-                              <div class="image featured">
-                                  <img src="{{ items.image }}" alt="" />
-                              </div>
-
-                              {% include {{ items.item }} %}
-                            </section>
-                          </div>
-                          {% endfor %}
-                </div>
-
-                {% endfor %}
-
-            </section>
-            {% endif %}
       </article>
-
-        <!-- section: cta -->
-        {% if page.cta %}
-      <section class="cta" id="{{ page.cta }}" 
-      {% if page.background_image %}
-      style="background-image: url('{{ page.background_image }}'); background-attachment: fixed; background-size: cover;"
-      {% endif %}>
-			
-          <header class="major">
-            <h2>{{ page.cta }}</h2>
-          </header>
-          {% if page.cta %}
-          <p style="padding: 0em 1em; text-align: center">{{ page.cta_description }}</p>
-          {% endif %}
-          <footer style="margin-bottom:8em">
-              {% if page.cta_button %}
-            <ul class="buttons">
-              <li><a href="{{ page.cta_button }}" class="button">{{ page.cta_button_label }}</a></li>
-            </ul>
-              {% endif %}
-          </footer>
-        
-        </section>
-        {% endif %}
+      {% endfor %}
     </div>
 
-    <!-- Footer -->
-    <footer id="footer">
+    <div class="edu">
+      <span class="edu-label">// education</span>
+      <div class="edu-grid">
+        {% for e in site.data.experience.education %}
+        <div class="edu-card">
+          <h4>{{ e.school }}</h4>
+          <p class="edu-degree">{{ e.degree }}</p>
+          <p class="edu-meta">{{ e.start }} &ndash; {{ e.end }} &middot; {{ e.location }}</p>
+          <p class="edu-detail">{{ e.detail }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
-        <ul class="icons">
-            {% if page.twitter_username %}
-            <li><a href="https://twitter.com/{{ page.twitter_username }}" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-            {% endif %}
-            {% if page.facebook_username %}
-            <li><a href="https://www.facebook.com/{{ page.facebook_username }}" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-            {% endif %}
-            {% if page.github_username %}
-            <li><a href="https://github.com/{{ page.github_username }}" class="icon circle fa-github"><span class="label">Github</span></a></li>
-            {% endif %}
-            {% if page.linkedin %}
-            <li><a href="https://linkedin.com/in/{{ page.linkedin }}" class="icon circle fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
-            {% endif %}
-        </ul>
+  <section class="section" id="projects">
+    <div class="section-head">
+      <span class="section-path">~/side_projects</span>
+      <h2>Things I built for fun</h2>
+    </div>
+    <div class="proj-grid">
+      {% for proj in site.data.projects.sideprojects %}
+      <a class="proj-card" href="{{ proj.url }}">
+        <div class="proj-card-head">
+          <span class="proj-run">./run</span>
+          <span class="proj-status">{{ proj.status }}</span>
+        </div>
+        <h3>{{ proj.name }}</h3>
+        <p class="proj-tagline">{{ proj.tagline }}</p>
+        <p class="proj-desc">{{ proj.description }}</p>
+        <div class="proj-tags">
+          {% for t in proj.tags %}<span>{{ t }}</span>{% endfor %}
+        </div>
+        <span class="proj-open">open {{ proj.url }} &#8599;</span>
+      </a>
+      {% endfor %}
+    </div>
 
-    <ul class="copyright">
-        <li>this website is maintained by {{ site.author}}</li>
-        <li>design: <a href="https://saragong.github.io/hello/"><strong>hello</strong></a> for github pages</li>
-        <li>adapted from <a href="https://html5up.net/twenty"><strong>Twenty</strong></a> by HTML5 Up</li>
-    </ul>
-    <br>
-	    <p>   > P.S. Page is still under development. Please excuse the errors. <br>
- 		  >      version 2 of the site coming soon...
-	    </p>
+    <div class="research">
+      <span class="edu-label">// security &amp; systems work</span>
+      <div class="research-grid">
+        {% for r in site.data.projects.research %}
+        <div class="research-card">
+          <h4>{{ r.name }}</h4>
+          <p>{{ r.description }}</p>
+          <div class="proj-tags">
+            {% for t in r.tags %}<span>{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
-</footer>
+  <section class="section" id="skills">
+    <div class="section-head">
+      <span class="section-path">~/skills</span>
+      <h2>The toolkit</h2>
+    </div>
+    <div class="skills-grid">
+      {% for g in site.data.skills.groups %}
+      <div class="skill-block">
+        <span class="skill-label">{{ g.label }}</span>
+        <div class="skill-tags">
+          {% for i in g.items %}<span>{{ i }}</span>{% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 
-  </body>
+  <section class="section" id="contact">
+    <div class="contact-box">
+      <span class="section-path">~/contact</span>
+      <h2>Let&rsquo;s connect.</h2>
+      <p class="contact-sub">Open to conversations on application security, reverse engineering, or a good CTF. Hiring for AppSec? My resume&rsquo;s a click away.</p>
+      <div class="contact-links">
+        <a href="mailto:{{ page.email }}" class="btn btn-primary">email me</a>
+        <a href="https://www.linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener" class="btn btn-ghost">linkedin</a>
+        <a href="https://github.com/{{ page.github_username }}" target="_blank" rel="noopener" class="btn btn-ghost">github</a>
+        <a href="{{ page.resume_url }}" target="_blank" rel="noopener" class="btn btn-ghost">resume.pdf</a>
+      </div>
+    </div>
+  </section>
 
+  <footer class="footer">
+    <span><span class="prompt">$</span> exit</span>
+    <span class="dim">&copy; {{ 'now' | date: "%Y" }} Rishab Kharidhi &middot; built from the command line</span>
+  </footer>
+
+  <script>window.__ROLES__ = {{ page.banner_roles | jsonify }};</script>
+  <script src="/js/main.js"></script>
+</body>
 </html>

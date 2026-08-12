@@ -1,4 +1,34 @@
-# this file organizes the items in your portfolio, which are placed in the _includes folder
-# in the root directory
+# Side projects. Add an entry and it appears on the site automatically.
+# url can be an internal redirect (e.g. /wordle-opener) or an external link.
+sideprojects:
+  - name: Wordle Opener
+    tagline: Optimal starting-word solver
+    description: A tool that ranks Wordle opening guesses by expected information gain — entropy scoring over the full answer set to find the words that carve the search space fastest.
+    url: /wordle-opener
+    tags: [Python, Information Theory, Web]
+    status: live
 
-projects:
+  - name: Mahjong
+    tagline: Tile game in the browser
+    description: A playable Mahjong build — tile matching, layouts, and scoring, running entirely client-side.
+    url: /mahjong
+    tags: [JavaScript, Game, Web]
+    status: live
+
+# Resume projects (security / systems work). Shown in a separate strip.
+research:
+  - name: Software Exploits & Anti-RE Mitigation
+    description: Analyzed Windows and Linux binaries for vulnerabilities; wrote C exploits for overflow attacks and used IDA + IDA Python to detect and mitigate anti-reverse-engineering techniques.
+    tags: [C, IDA Pro, Reverse Engineering]
+
+  - name: Forensic Data Carver
+    description: Python tool that recovers and extracts files directly from a raw filesystem dump for forensic analysis.
+    tags: [Python, Forensics]
+
+  - name: Web App Security — Independent Study
+    description: Threat analysis of a lab web app with hands-on XSS, SQL injection, and CSRF. Ongoing CTF work — top 7% worldwide on TryHackMe.
+    tags: [OWASP, CTF, Pentesting]
+
+  - name: Linux Systems Administration
+    description: Stood up a corporate network for 20 employees on Linux — DHCP, DNS, and web servers configured end to end.
+    tags: [Linux, Networking]

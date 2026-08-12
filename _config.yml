@@ -1,23 +1,18 @@
-# _config.yml
-
-# required, replace with your own information -----
 title: Rishab Kharidhi
 author: Rishab Kharidhi
-description: > 
-  this is my personal website
-baseurl: "www.rishabkharidhi.com"
+description: Rishab Kharidhi — Security Engineer at AWS. Application security, reverse engineering, and the occasional side project.
+url: "https://rishabkharidhi.com"
+baseurl: ""
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  
-#---------------------------------------------------
 
 exclude:
   - .sass-cache/
   - .jekyll-cache/
-  - gemfiles/
   - Gemfile
   - Gemfile.lock
-
+  - README.md
+  - vendor

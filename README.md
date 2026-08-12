@@ -1,15 +1,24 @@
-This website is maintained by Rishab Kharidhi, licensed from Sara Gong
+# rishabkharidhi.com
 
-## Additional Information
-Created by [Sara Gong](https://saragong.github.io/), University of Southern California.  
+Personal site for Rishab Kharidhi — Security Engineer. Built with Jekyll, hosted on GitHub Pages.
 
-This work is licensed under the MIT License, which lets you use, modify, and publish adaptations of this template free of charge and without restriction, as long as you preserve all copyright notices and licenses.  
+## Editing content
+Everything data-driven lives in `_data/`:
+- `experience.yml` — work history + education
+- `projects.yml` — `sideprojects` (Wordle Opener, Mahjong, …) and `research`
+- `skills.yml` — skill groups
 
-This original theme, of which this is an adaptation, is licensed by HTML5 Up under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).  
+Hero text, roles, and links are in the front matter of `index.md`.
+Layout + styling: `_layouts/hello-default.html`, `css/style.css`, `js/main.js`.
 
-The images from the demo website are from [Unsplash](https://unsplash.com/).
+## Side project redirects
+`/wordle-opener` and `/mahjong` are redirect stubs (`<meta refresh>`).
+Edit the target URL in each `index.html`, or drop the real app in that folder.
 
-## Theme Information
-Twenty by HTML5 UP  
-html5up.net | @n33co  
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+## Local dev
+```
+bundle install
+bundle exec jekyll serve
+```
+
+Original template adapted from a design by Sara Gong (MIT). Type: Space Grotesk + JetBrains Mono.
